@@ -22,16 +22,8 @@
     "@babel/eslint-parser": "^7.12.16",
     "@babel/plugin-proposal-optional-chaining": "^7.21.0",
     "@vue/cli-plugin-babel": "~5.0.0",
-<<<<<<< HEAD
     "@vue/cli-service": "~5.0.0",
     "autoprefixer": "^10.4.15",
-=======
-    "@vue/cli-plugin-eslint": "~5.0.0",
-    "@vue/cli-service": "~5.0.0",
-    "autoprefixer": "^10.4.15",
-    "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.0.3",
->>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
     "postcss": "^8.4.31",
     "tailwindcss": "^3.4.1"
   },
