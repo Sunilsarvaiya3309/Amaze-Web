@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
 <script setup>
 import { ref, onMounted } from "vue";
 import { useMotion } from "@vueuse/motion";
@@ -10,20 +6,14 @@ const testimonialRefs = ref([]);
 
 const testimonials = [
   {
-<<<<<<< HEAD
     name: "Vandana Goyal",
     image: "https://cdn-icons-png.flaticon.com/512/6858/6858504.png",
-=======
-    name: "Aarti Sharma",
-    image: "https://randomuser.me/api/portraits/women/75.jpg",
->>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
     feedback:
       "Amaze Driving School gave me the confidence I needed. The instructors were super patient and professional!",
     location: "Ahmedabad",
     rating: 5,
   },
   {
-<<<<<<< HEAD
     name: "Prince",
     image: "https://cdn-icons-png.flaticon.com/512/6858/6858504.png",
     feedback:
@@ -45,35 +35,11 @@ const testimonials = [
     feedback:
       "Superb instructors and professional environment. They made learning fun and safe.",
     location: "Ahmedabad",
-=======
-    name: "Vikas Mehta",
-    image: "https://randomuser.me/api/portraits/men/41.jpg",
-    feedback:
-      "Their cars are well-maintained and training is structured. Highly recommended!",
-    location: "Surat",
-    rating: 5,
-  },
-  {
-    name: "Neha Joshi",
-    image: "https://randomuser.me/api/portraits/women/66.jpg",
-    feedback:
-      "Very polite staff and flexible timings. I passed my driving test on the first attempt.",
-    location: "Vadodara",
-    rating: 5,
-  },
-  {
-    name: "Rahul Jain",
-    image: "https://randomuser.me/api/portraits/men/29.jpg",
-    feedback:
-      "Superb instructors and professional environment. They made learning fun and safe.",
-    location: "Rajkot",
->>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
     rating: 5,
   },
 ];
 
 onMounted(() => {
-<<<<<<< HEAD
   requestAnimationFrame(() => {
     testimonialRefs.value.forEach((el, index) => {
       useMotion(el, {
@@ -132,28 +98,10 @@ onMounted(() => {
       e.stopImmediatePropagation();
     }
   });
-=======
-  testimonialRefs.value.forEach((el, index) => {
-    useMotion(el, {
-      initial: { opacity: 0, y: 60, scale: 0.95 },
-      enter: {
-        opacity: 1,
-        y: 0,
-        scale: 1,
-        transition: {
-          type: "spring",
-          stiffness: 150,
-          delay: 0.2 + index * 0.2,
-        },
-      },
-    });
-  });
->>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
 });
 </script>
 
 <template>
-<<<<<<< HEAD
   <section
     class="bg-yellow-100 text-black dark:bg-gray-900 dark:text-white py-20 px-6 sm:px-10"
   >
@@ -165,10 +113,6 @@ onMounted(() => {
       <div id="google-reviews-widget" class="flex justify-center"></div>
     </div>
     <div class="text-center my-16">
-=======
-  <section class="bg-yellow-100 text-black dark:bg-gray-900 dark:text-white py-20 px-6 sm:px-10">
-    <div class="text-center mb-16">
->>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
       <h2 class="text-4xl font-extrabold text-black dark:text-yellow-400 mb-4">
         What Our Students Say
       </h2>
@@ -194,13 +138,9 @@ onMounted(() => {
             <h3 class="font-semibold text-lg text-black dark:text-yellow-300">
               {{ testimonial.name }}
             </h3>
-<<<<<<< HEAD
             <p class="text-sm text-gray-600 dark:text-gray-400">
               {{ testimonial.location }}
             </p>
-=======
-            <p class="text-sm text-gray-600 dark:text-gray-400">{{ testimonial.location }}</p>
->>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
           </div>
         </div>
 
@@ -218,13 +158,9 @@ onMounted(() => {
           </svg>
         </div>
 
-<<<<<<< HEAD
         <p
           class="text-gray-800 dark:text-gray-200 leading-relaxed relative z-10"
         >
-=======
-        <p class="text-gray-800 dark:text-gray-200 leading-relaxed relative z-10">
->>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
           "{{ testimonial.feedback }}"
         </p>
 
@@ -258,12 +194,8 @@ onMounted(() => {
 }
 
 @keyframes pulse-slow {
-<<<<<<< HEAD
   0%,
   100% {
-=======
-  0%, 100% {
->>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
     transform: scale(1);
     opacity: 1;
   }

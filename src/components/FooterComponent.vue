@@ -93,21 +93,11 @@ onMounted(() => {
         <div
           class="text-sm text-black mb-2 flex flex-col gap-2 dark:text-white/70"
         >
-<<<<<<< HEAD
           <div class="flex items-center gap-1">
-=======
-          <div class="flex items-center gap-3">
->>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
             📞
             <a href="tel:+91 92275 75667" class="hover:underline">
               +91 92275 75667</a
             >
-<<<<<<< HEAD
-=======
-            <a href="tel:+91 70160 03600" class="hover:underline"
-              >+91 70160 03600</a
-            >
->>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
           </div>
           <div>
             <span class="font-semibold">Admin</span> :-

@@ -1,9 +1,5 @@
 // src/router/index.js
-<<<<<<< HEAD
 import { createRouter, createWebHashHistory } from "vue-router";
-=======
-import { createRouter, createWebHistory } from "vue-router";
->>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
 import Home from "@/pages/PageHome.vue";
 import PageAbout from "@/pages/PageAbout.vue";
 import PageCourse from "@/pages/PageCourse.vue";
@@ -68,11 +64,7 @@ const routes = [
 ];
 
 const router = createRouter({
-<<<<<<< HEAD
   history: createWebHashHistory(), // or createWebHashHistory()
-=======
-  history: createWebHistory(), // or createWebHashHistory()
->>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
   routes,
 });
 
