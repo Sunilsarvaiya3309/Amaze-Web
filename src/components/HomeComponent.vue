@@ -88,8 +88,8 @@ const services = ref([
           src="https://cdni.iconscout.com/illustration/premium/thumb/traffic-police-man-showing-hand-signal-illustration-download-in-svg-png-gif-file-formats--ready-to-go-pack-people-illustrations-2425188.png"
           class="w-48 xl:block hidden"
         />
-        Welcome to <span class="text-yellow-400 mx-3"> Amaze </span> Motor Driving
-        School
+        Welcome to <span class="text-yellow-400 mx-3"> Amaze </span> Motor
+        Driving School
       </div>
 
       <p
@@ -107,12 +107,11 @@ const services = ref([
         :enter="{ opacity: 1, y: 0, transition: { delay: 0.8 } }"
         class="mt-8"
       >
-        <a
-          href="#"
+        <button
           class="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold shadow hover:bg-yellow-300 transition"
         >
           Get Started
-        </a>
+        </button>
       </div>
     </div>
   </section>
