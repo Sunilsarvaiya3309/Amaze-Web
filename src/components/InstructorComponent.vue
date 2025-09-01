@@ -1,12 +1,18 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import { useMotion } from "@vueuse/motion";
+<<<<<<< HEAD
 import rajbhai from "@/assets/images/rajbhai.jpg";
 import sahilDesai from "@/assets/images/sahil_desai.jpg";
 import AnitaRajguru from "@/assets/images/anita_rajguru.jpg";
 import Krishnakant from "@/assets/images/krishnakant.jpg";
 import ArunJoshi from "@/assets/images/arun_joshi.jpg";
 import priyaValodra from "@/assets/images/priya valodra.jpg"
+=======
+import rajbhai from '@/assets/images/rajbhai.jpg'
+import sahilDesai from '@/assets/images/sahil_desai.jpg'
+
+>>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
 
 const ceoRef = ref(null);
 const staffCards = ref([]);
@@ -14,12 +20,18 @@ const instructorCards = ref([]);
 
 const ceo = {
   name: "Anita Rajguru",
+<<<<<<< HEAD
   title: "Founder",
   image: AnitaRajguru,
+=======
+  title: "Founder & CEO",
+  image: "https://cdn-icons-png.flaticon.com/512/6858/6858504.png",
+>>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
   bio: "With over 10 years of experience, Anita founded Amaze Driving School to help people learn safe, confident driving.",
 };
 
 const officeStaff = [
+<<<<<<< HEAD
    {
     name: "Krishnakant Rajguru",
     title: "CEO",
@@ -33,6 +45,16 @@ const officeStaff = [
   {
     name: "Raj",
     title: "Management & Admin",
+=======
+  {
+    name: "Krishnakant Rajguru",
+    title: "Reception Manager",
+    image: "https://cdn-icons-png.flaticon.com/512/6858/6858504.png",
+  },
+  {
+    name: "Raj",
+    title: "Office Coordinator",
+>>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
     image: rajbhai,
   },
 ];
@@ -51,7 +73,16 @@ const instructors = [
   {
     name: "Priya Valodra",
     title: "Female Car Instructor",
+<<<<<<< HEAD
     image: priyaValodra,
+=======
+    image: "https://cdn-icons-png.flaticon.com/512/6858/6858504.png",
+  },
+  {
+    name: "Krishna",
+    title: "Car Instructor",
+    image: "https://cdn-icons-png.flaticon.com/512/6858/6858504.png",
+>>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
   },
 ];
 
@@ -113,10 +144,14 @@ onMounted(() => {
     class="bg-yellow-100 text-gray-900 dark:bg-[#0f0f0f] dark:text-yellow-400 py-20 px-6 sm:px-10 transition-colors duration-500"
   >
     <!-- CEO -->
+<<<<<<< HEAD
     <div
       ref="ceoRef"
       class="max-w-4xl mx-auto text-center cursor-pointer mb-20"
     >
+=======
+    <div ref="ceoRef" class="max-w-4xl mx-auto text-center cursor-pointer mb-20">
+>>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
       <img
         :src="ceo.image"
         alt="CEO"
@@ -138,11 +173,17 @@ onMounted(() => {
     <!-- Office Staff -->
     <div class="text-center mb-16">
       <h2 class="text-3xl font-bold mb-6 text-gray-900 dark:text-yellow-400">
+<<<<<<< HEAD
         <span class="text-yellow-600 dark:text-yellow-500"
           >Backend Team Management & Office Staff</span
         >
       </h2>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+=======
+         <span class="text-yellow-600 dark:text-yellow-500">Backend Team Management & Office Staff</span>
+      </h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
+>>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
         <div
           v-for="(staff, index) in officeStaff"
           :key="index"
@@ -170,7 +211,11 @@ onMounted(() => {
         Driving
         <span class="text-yellow-600 dark:text-yellow-500">Instructors</span>
       </h2>
+<<<<<<< HEAD
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+=======
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-7xl mx-auto">
+>>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
         <div
           v-for="(instructor, index) in instructors"
           :key="index"

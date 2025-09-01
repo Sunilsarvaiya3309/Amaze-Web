@@ -78,7 +78,11 @@ const services = ref([
         transition: { type: 'spring', stiffness: 80 },
       }"
     >
+<<<<<<< HEAD
       <div
+=======
+      <h1
+>>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
         v-motion
         :initial="{ opacity: 0, scale: 0.8 }"
         :enter="{ opacity: 1, scale: 1, transition: { delay: 0.3 } }"
@@ -88,9 +92,15 @@ const services = ref([
           src="https://cdni.iconscout.com/illustration/premium/thumb/traffic-police-man-showing-hand-signal-illustration-download-in-svg-png-gif-file-formats--ready-to-go-pack-people-illustrations-2425188.png"
           class="w-48 xl:block hidden"
         />
+<<<<<<< HEAD
         Welcome to <span class="text-yellow-400 mx-3"> Amaze </span> Motor Driving
         School
       </div>
+=======
+        Welcome to <span class="text-yellow-400"> Amaze </span> Motor Driving
+        School
+      </h1>
+>>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
 
       <p
         v-motion

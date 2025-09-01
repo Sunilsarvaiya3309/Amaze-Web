@@ -1,4 +1,5 @@
 <script setup>
+<<<<<<< HEAD
 import { ref, computed, watch } from "vue";
 import ThemedListbox from "./ThemedListbox.vue";
 
@@ -42,6 +43,11 @@ watch(car, (selectedCar) => {
   const selected = carOptions.find((c) => c.name === selectedCar);
   price.value = selected ? selected.price : "";
 });
+=======
+import { ref } from "vue";
+
+const showModal = ref(false);
+>>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
 
 function openModal() {
   showModal.value = true;
@@ -50,6 +56,7 @@ function openModal() {
 function closeModal() {
   showModal.value = false;
 }
+<<<<<<< HEAD
 
 function submitForm() {
   if (!name.value || !phone.value || !category.value) {
@@ -96,14 +103,31 @@ function submitForm() {
   price.value = "";
   closeModal();
 }
+=======
+>>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
 </script>
 
 <template>
   <!-- 🔶 Enroll Section -->
   <section
+<<<<<<< HEAD
     class="relative bg-yellow-100 dark:bg-gray-900 py-20 px-4 text-center"
   >
     <div class="max-w-3xl mx-auto">
+=======
+    class="relative bg-gradient-to-r from-yellow-100 via-yellow-100 to-yellow-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-20 px-4 text-center overflow-hidden transition-colors duration-500"
+  >
+    <div
+      v-motion
+      :initial="{ opacity: 0, y: 40 }"
+      :enter="{
+        opacity: 1,
+        y: 0,
+        transition: { type: 'spring', stiffness: 80 },
+      }"
+      class="max-w-3xl mx-auto"
+    >
+>>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
       <h2
         class="text-4xl sm:text-5xl font-bold text-black dark:text-yellow-300 mb-4"
       >
@@ -113,6 +137,7 @@ function submitForm() {
         Join Amaze Motor Driving School today and become a confident driver with
         our expert instructors.
       </p>
+<<<<<<< HEAD
       <!-- Driving Journey Progress Bar -->
       <div class="grid grid-cols-3 md:grid-cols-6 gap-4 my-10">
         <v-motion
@@ -131,6 +156,12 @@ function submitForm() {
       <button
         @click="openModal"
         class="relative px-10 py-4 font-semibold text-white bg-black dark:bg-yellow-400 dark:text-black rounded-full shadow-lg transition-all hover:scale-105"
+=======
+
+      <button
+        @click="openModal"
+        class="relative px-10 py-4 font-semibold text-white bg-black dark:bg-yellow-400 dark:text-black rounded-full shadow-lg transition-all hover:scale-105 hover:bg-gray-900 dark:hover:bg-yellow-300"
+>>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
       >
         <span class="relative z-10">Enroll Now</span>
         <span
@@ -148,7 +179,19 @@ function submitForm() {
       class="fixed inset-0 p-4 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50"
     >
       <div
+<<<<<<< HEAD
         class="bg-white dark:bg-gray-900 rounded-2xl p-8 w-full max-w-md shadow-2xl text-center relative"
+=======
+        v-motion
+        :initial="{ opacity: 0, scale: 0.8 }"
+        :enter="{
+          opacity: 1,
+          scale: 1,
+          transition: { type: 'spring', stiffness: 120 },
+        }"
+        :leave="{ opacity: 0, scale: 0.8 }"
+        class="bg-white dark:bg-gray-900 rounded-2xl p-8 w-full max-w-md shadow-2xl text-center relative transition-colors duration-500"
+>>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
       >
         <h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-yellow-300">
           Enroll Form
@@ -157,6 +200,7 @@ function submitForm() {
           Please contact us or visit our office to confirm your enrollment.
         </p>
 
+<<<<<<< HEAD
         <div class="flex flex-col gap-4 text-left">
           <input
             v-model="name"
@@ -217,6 +261,20 @@ function submitForm() {
 
           <button
             @click="submitForm"
+=======
+        <div class="flex flex-col gap-4">
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-black dark:text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          />
+          <input
+            type="tel"
+            placeholder="Phone Number"
+            class="border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-black dark:text-white rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+          />
+          <button
+>>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
             class="bg-yellow-400 hover:bg-yellow-300 text-black font-semibold px-6 py-2 rounded-lg transition"
           >
             Submit
@@ -225,7 +283,11 @@ function submitForm() {
 
         <button
           @click="closeModal"
+<<<<<<< HEAD
           class="absolute top-2 right-3 text-3xl text-gray-500 hover:text-black"
+=======
+          class="absolute top-2 right-3 text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-yellow-300 text-xl"
+>>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
         >
           &times;
         </button>

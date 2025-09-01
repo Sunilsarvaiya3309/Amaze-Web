@@ -10,7 +10,10 @@ const extraRef = ref(null);
 const darkRef = ref(null);
 
 const { isDark, toggleDark } = useDarkMode();
+<<<<<<< HEAD
 const showModal = ref(false);
+=======
+>>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
 
 const checkScroll = () => {
   showButton.value = window.scrollY > 300;
@@ -42,6 +45,7 @@ onUnmounted(() => {
   window.removeEventListener("scroll", checkScroll);
 });
 
+<<<<<<< HEAD
 function openModal() {
   showModal.value = true;
 }
@@ -50,6 +54,8 @@ function closeModal() {
   showModal.value = false;
 }
 
+=======
+>>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
@@ -62,7 +68,12 @@ const scrollToTop = () => {
       v-if="showButton"
       ref="buttonRef"
       @click="scrollToTop"
+<<<<<<< HEAD
       class="fixed bottom-6 right-6 z-50 bg-black text-yellow-400 px-4 py-3 rounded-full shadow-lg font-bold transition-all animate-pulse dark:bg-yellow-500 dark:text-black"
+=======
+      class="fixed bottom-6 right-6 z-50 bg-black text-yellow-400 px-4 py-3 rounded-full shadow-lg font-bold transition-all animate-pulse
+             dark:bg-yellow-500 dark:text-black"
+>>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
     >
       <ArrowUpIcon class="h-6 w-4" />
     </button>
@@ -70,13 +81,20 @@ const scrollToTop = () => {
     <!-- Need Help Button -->
     <button
       v-if="showButton"
+<<<<<<< HEAD
       @click="openModal"
       ref="extraRef"
       class="fixed bottom-20 left-2 z-40 bg-black text-yellow-500 hover:text-black px-4 py-2 rounded-full shadow-md font-semibold transition-all hover:bg-yellow-300 dark:bg-yellow-500 dark:text-black"
+=======
+      ref="extraRef"
+      class="fixed bottom-20 left-2 z-40 bg-black text-yellow-500 hover:text-black px-4 py-2 rounded-full shadow-md font-semibold transition-all hover:bg-yellow-300
+             dark:bg-yellow-500 dark:text-black"
+>>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
     >
       <PhoneIcon class="h-5 w-5 inline-block mr-1" />
       Need Help?
     </button>
+<<<<<<< HEAD
     <transition name="fade-scale">
       <div
         v-if="showModal"
@@ -108,15 +126,25 @@ const scrollToTop = () => {
         </div>
       </div>
     </transition>
+=======
+>>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
 
     <!-- Dark Mode Toggle Button -->
     <button
       ref="darkRef"
       @click="toggleDark()"
+<<<<<<< HEAD
       class="fixed bottom-24 right-6 z-30 w-12 h-12 flex items-center justify-center rounded-full border shadow-md transition-all duration-500 bg-black text-black dark:bg-yellow-500 dark:text-black"
     >
       <span class="text-xl">
         {{ isDark ? "🌞" : "🌙" }}
+=======
+      class="fixed bottom-24 right-6 z-30 w-12 h-12 flex items-center justify-center rounded-full border shadow-md transition-all duration-500
+             bg-black text-black dark:bg-yellow-500 dark:text-black"
+    >
+      <span class="text-xl">
+        {{ isDark ? '🌞' : '🌙' }}
+>>>>>>> 28bc77c11c43f8163eb3709cafb1f76c49fbe40a
       </span>
     </button>
   </div>
