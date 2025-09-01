@@ -108,7 +108,7 @@ const services = ref([
         class="mt-8"
       >
         <a
-          href="#services"
+          href="#"
           class="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold shadow hover:bg-yellow-300 transition"
         >
           Get Started
