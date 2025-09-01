@@ -1,5 +1,5 @@
 // src/router/index.js
-import { createRouter, createWebHashHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import Home from "@/pages/PageHome.vue";
 import PageAbout from "@/pages/PageAbout.vue";
 import PageCourse from "@/pages/PageCourse.vue";
@@ -64,7 +64,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(), // or createWebHashHistory()
+  history: createWebHistory(), // or createWebHashHistory()
   routes,
 });
 
