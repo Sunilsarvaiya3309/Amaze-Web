@@ -73,19 +73,20 @@ onMounted(() => {
       widgetDiv.setAttribute("data-elfsight-app-lazy", "");
       container.appendChild(widgetDiv);
     }
- // 🔧 Wait for widget to load, then force dark mode styles
+    // 🔧 Wait for widget to load, then force dark mode styles
     setTimeout(() => {
-      const iframe = document.querySelector(
-        "#google-reviews-widget iframe"
-      );
+      const iframe = document.querySelector("#google-reviews-widget iframe");
       if (iframe) {
         iframe.onload = () => {
           try {
-            const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+            const iframeDoc =
+              iframe.contentDocument || iframe.contentWindow.document;
             iframeDoc.body.style.color = "#fff";
             iframeDoc.body.style.backgroundColor = "#111"; // optional
           } catch (e) {
-            console.warn("Cannot access iframe content due to cross-origin restrictions.");
+            console.warn(
+              "Cannot access iframe content due to cross-origin restrictions."
+            );
           }
         };
       }

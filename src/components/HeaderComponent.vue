@@ -7,9 +7,9 @@ const isOpen = ref(false);
 const menuItems = [
   { label: "Home", to: "/home" },
   { label: "About Us", to: "/about" },
-  { label: "Courses", to: "/courses" },
+  { label: "Cars", to: "/cars" },
   { label: "Instructors", to: "/instructors" },
-  { label: "Pricing", to: "/pricing" },
+  // { label: "Pricing", to: "/pricing" },
   { label: "Testimonials", to: "/testimonials" },
   { label: "Gallery", to: "/gallery" },
   { label: "Contact", to: "/contact" },
@@ -46,8 +46,12 @@ const menuItems = [
             alt="Logo"
             class="h-14 w-14 rounded-full shadow-lg"
           />
-          <span class="font-bold text-xl flex flex-col">Amaze
-            <span class="font-normal text-sm text-neutral-800 dark:text-yellow-400">Empowering Safe Drive</span>
+          <span class="font-bold text-xl flex flex-col"
+            >Amaze
+            <span
+              class="font-normal text-sm text-neutral-800 dark:text-yellow-400"
+              >Empowering Safe Drive</span
+            >
           </span>
         </router-link>
       </div>
@@ -69,10 +73,10 @@ const menuItems = [
         </li>
         <li>
           <router-link
-            to="/enroll"
+            to="/packages"
             class="ml-4 inline-block bg-black text-yellow-300 dark:bg-yellow-400 dark:text-black hover:bg-white hover:text-black dark:hover:bg-white transition duration-300 px-4 py-2 rounded-md font-semibold"
           >
-            Enroll Now
+            Packages
           </router-link>
         </li>
       </ul>
@@ -87,7 +91,11 @@ const menuItems = [
           name="menuIcon"
           class="h-6 w-6 stroke-black dark:stroke-yellow-400"
         />
-        <BaseIcon v-else name="closeIcon" class="h-6 w-6 stroke-black dark:stroke-yellow-400" />
+        <BaseIcon
+          v-else
+          name="closeIcon"
+          class="h-6 w-6 stroke-black dark:stroke-yellow-400"
+        />
       </button>
     </nav>
 
@@ -137,11 +145,11 @@ const menuItems = [
             :enter="{ opacity: 1, y: 0, transition: { delay: 0.6 } }"
           >
             <router-link
-              to="/enroll"
+              to="/packages"
               class="block mt-2 bg-black text-yellow-300 dark:bg-yellow-400 dark:text-black hover:bg-white hover:text-black dark:hover:bg-white transition duration-300 px-4 py-2 rounded-md font-semibold text-center"
               @click="isOpen = false"
             >
-              Enroll Now
+              Packages
             </router-link>
           </li>
         </ul>

@@ -18,7 +18,7 @@ onMounted(() => {
   gsap.set(path, {
     strokeDasharray: length,
     strokeDashoffset: length,
-    opacity: 0.1,
+    opacity: 0.5,
   });
 
   const tl = gsap.timeline({
@@ -55,15 +55,15 @@ onMounted(() => {
 <template>
   <div
     v-if="visible"
-    class="fixed inset-0 z-50 bg-black flex items-center justify-center"
+    class="fixed inset-0 z-50 bg-yellow-500 flex items-center justify-center"
   >
     <svg
       class="w-full h-auto text-center"
       viewBox="-7 0 398 65"
       xmlns="http://www.w3.org/2000/svg"
-      stroke="yellow"
+      stroke="black"
       stroke-width="2"
-      fill="black"
+      fill="white"
     >
       <!-- SVG Path converted from "AMAZE." -->
       <path
@@ -75,11 +75,11 @@ onMounted(() => {
     </svg>
     <div
       ref="leftCurtain"
-      class="absolute left-0 top-0 h-full w-1/2 bg-yellow-500 z-[100]"
+      class="absolute left-0 top-0 h-full w-1/2 bg-black z-[100]"
     ></div>
     <div
       ref="rightCurtain"
-      class="absolute right-0 top-0 h-full w-1/2 bg-yellow-500 z-[100]"
+      class="absolute right-0 top-0 h-full w-1/2 bg-black z-[100]"
     ></div>
   </div>
 </template>

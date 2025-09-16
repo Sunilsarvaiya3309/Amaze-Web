@@ -8,9 +8,9 @@ const mapRef = ref(null);
 const menuItems = [
   { label: "Home", to: "/home" },
   { label: "About Us", to: "/about" },
-  { label: "Courses", to: "/courses" },
+  { label: "Cars", to: "/cars" },
   { label: "Instructors", to: "/instructors" },
-  { label: "Pricing", to: "/pricing" },
+  { label: "Testimonials", to: "/testimonials" },
 ];
 
 onMounted(() => {

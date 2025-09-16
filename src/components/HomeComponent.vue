@@ -82,7 +82,7 @@ const services = ref([
         v-motion
         :initial="{ opacity: 0, scale: 0.8 }"
         :enter="{ opacity: 1, scale: 1, transition: { delay: 0.3 } }"
-        class="text-4xl sm:text-5xl xl:text-6xl font-bold mb-4 xl:flex items-center"
+        class="text-2xl sm:text-5xl font-bold mb-4 xl:flex items-center"
       >
         <img
           src="https://cdni.iconscout.com/illustration/premium/thumb/traffic-police-man-showing-hand-signal-illustration-download-in-svg-png-gif-file-formats--ready-to-go-pack-people-illustrations-2425188.png"
@@ -96,7 +96,7 @@ const services = ref([
         v-motion
         :initial="{ opacity: 0, y: 20 }"
         :enter="{ opacity: 1, y: 0, transition: { delay: 0.5 } }"
-        class="text-lg sm:text-xl max-w-xl text-white/90 dark:text-white/80"
+        class="text-base sm:text-xl max-w-xl text-white/90 dark:text-white/80"
       >
         Your journey to safe and confident driving starts with us.
       </p>
@@ -107,11 +107,13 @@ const services = ref([
         :enter="{ opacity: 1, y: 0, transition: { delay: 0.8 } }"
         class="mt-8"
       >
-        <button
-          class="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold shadow hover:bg-yellow-300 transition"
-        >
-          Get Started
-        </button>
+        <a href="/packages">
+          <button
+            class="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold shadow hover:bg-yellow-300 transition"
+          >
+            Get Started
+          </button>
+        </a>
       </div>
     </div>
   </section>
@@ -186,6 +188,53 @@ const services = ref([
           </h3>
           <p class="text-white/80">{{ point.message }}</p>
         </div>
+      </div>
+    </div>
+    <!-- Packages Call-to-Action Section -->
+    <div class="mt-20 max-w-5xl mx-auto">
+      <div
+        v-motion
+        :initial="{ opacity: 0, y: 40 }"
+        :enter="{
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.6, ease: 'easeOut' },
+        }"
+        class="bg-gray-800 text-yellow-400 rounded-xl shadow-lg flex flex-col md:flex-row justify-between items-center px-6 sm:px-12 py-10"
+      >
+        <div class="mb-6 md:mb-0 text-center md:text-left">
+          <h2 class="text-2xl sm:text-5xl font-extrabold mb-2 max-w-xl">
+            Ready to Become a <span>Confident Driver?</span>
+          </h2>
+          <p class="text-white/80 text-base sm:text-lg max-w-xl">
+            Start your journey today with our professional instructors and
+            flexible packages.
+          </p>
+        </div>
+
+        <a href="/packages">
+          <button
+            v-motion
+            :initial="{ opacity: 0, scale: 0.9 }"
+            :enter="{ opacity: 1, scale: 1, transition: { delay: 0.3 } }"
+            class="bg-yellow-400 text-black duration-200 hover:text-black ease-in-out font-semibold px-6 py-3 rounded-lg shadow hover:bg-gray-200 transition flex items-center gap-2"
+          >
+            Explore Packages
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
+            </svg>
+          </button>
+        </a>
       </div>
     </div>
   </section>

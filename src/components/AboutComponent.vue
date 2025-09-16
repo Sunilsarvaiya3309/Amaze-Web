@@ -8,10 +8,10 @@ const section2 = ref(null);
 const section3 = ref(null);
 
 const stats = [
-  { label: "Years Experience", value: 10, suffix: "+" },
-  { label: "Successful Drivers", value: 2000, suffix: "+" },
+  { label: "Above Years Experience", value: 5, suffix: "+" },
+  { label: "Successful Students", value: 4000, suffix: "+" },
   { label: "Certifications", value: 5, suffix: "+" },
-  { label: "Satisfaction Rate", value: 100, suffix: "%" },
+  { label: "Satisfaction Rate", value: 99, suffix: "%" },
 ];
 
 onMounted(() => {
@@ -80,7 +80,7 @@ onMounted(() => {
           <li>Flexible course timing</li>
           <li>High passing rate</li>
           <li>Modern dual-control vehicles</li>
-          <li>Affordable pricing</li>
+          <li>Reasonable pricing</li>
         </ul>
       </div>
       <img

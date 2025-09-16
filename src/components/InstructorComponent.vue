@@ -3,7 +3,7 @@ import { ref, onMounted } from "vue";
 import { useMotion } from "@vueuse/motion";
 import rajbhai from "@/assets/images/rajbhai.jpg";
 import sahilDesai from "@/assets/images/sahil_desai.jpg";
-import AnitaRajguru from "@/assets/images/anita_rajguru.jpg";
+import AnitaRajguru from "@/assets/images/anita_rajguru(1).png";
 import Krishnakant from "@/assets/images/krishnakant.jpg";
 import ArunJoshi from "@/assets/images/arun_joshi.jpg";
 import priyaValodra from "@/assets/images/priya valodra.jpg"
@@ -16,7 +16,7 @@ const ceo = {
   name: "Anita Rajguru",
   title: "Founder",
   image: AnitaRajguru,
-  bio: "With over 10 years of experience, Anita founded Amaze Driving School to help people learn safe, confident driving.",
+  bio: "With over 5 years of experience, Anita founded Amaze Driving School to help people learn safe, confident driving.",
 };
 
 const officeStaff = [

@@ -8,7 +8,8 @@ import PageTestimonials from "@/pages/PageTestimonials.vue";
 import PagePricing from "@/pages/PagePricing.vue";
 import PageGallery from "@/pages/PageGallery.vue";
 import PageContact from "@/pages/PageContact.vue";
-import PageEnroll from "@/pages/PageEnroll.vue";
+import PagePackages from "@/pages/PageEnroll.vue";
+import PageNotFound from "@/pages/PageNotFound.vue";
 
 const routes = [
   {
@@ -27,7 +28,7 @@ const routes = [
     component: PageAbout,
   },
   {
-    path: "/courses",
+    path: "/cars",
     name: "PageCourse",
     component: PageCourse,
   },
@@ -41,11 +42,11 @@ const routes = [
     name: "Pagetestimonials",
     component: PageTestimonials,
   },
-  {
-    path: "/pricing",
-    name: "PagePricing",
-    component: PagePricing,
-  },
+  // {
+  //   path: "/pricing",
+  //   name: "PagePricing",
+  //   component: PagePricing,
+  // },
   {
     path: "/gallery",
     name: "PageGallery",
@@ -57,15 +58,24 @@ const routes = [
     component: PageContact,
   },
   {
-    path: "/enroll",
-    name: "PageEnroll",
-    component: PageEnroll,
+    path: "/packages",
+    name: "PagePackages",
+    component: PagePackages,
+  },
+  // ✅ Catch-all route for 404
+  {
+    path: "/:pathMatch(.*)*",
+    name: "NotFound",
+    component: PageNotFound,
   },
 ];
 
 const router = createRouter({
   history: createWebHistory(), // or createWebHashHistory()
   routes,
+  scrollBehavior() {
+    return { top: 0 };
+  },
 });
 
 export default router;

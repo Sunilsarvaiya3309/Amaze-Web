@@ -1,6 +1,6 @@
 <script setup>
-import EnrollComponent from "@/components/EnrollComponent.vue";
+import PackagesComponent from "@/components/PackagesComponent.vue";
 </script>
 <template>
-  <EnrollComponent />
+  <PackagesComponent />
 </template>
