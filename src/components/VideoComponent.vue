@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import { useMotion } from "@vueuse/motion";
-import MainVIdeo from "@/assets/videos/Main.mp4";
+import MainVIdeo from "@/assets/videos/Main.mov";
 
 const galleryRefs = ref([]);
 const galleryVideos = [MainVIdeo];
@@ -40,7 +40,7 @@ onMounted(() => {
 
     <div v-for="(video, index) in galleryVideos" :key="index" ref="galleryRefs">
       <video autoplay loop playsinline class="rounded-lg sm:w-4/12 mx-auto">
-        <source :src="video" type="video/mp4" />
+        <source :src="video" type="video/mov" />
       </video>
     </div>
   </section>
