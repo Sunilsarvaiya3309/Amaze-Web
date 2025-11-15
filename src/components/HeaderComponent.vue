@@ -11,7 +11,8 @@ const menuItems = [
   { label: "Instructors", to: "/instructors" },
   // { label: "Pricing", to: "/pricing" },
   { label: "Testimonials", to: "/testimonials" },
-  { label: "Gallery", to: "/gallery" },
+  { label: "Photo Gallery", to: "/photo-gallery" },
+  { label: "Video Gallery", to: "/video-gallery" },
   { label: "Contact", to: "/contact" },
 ];
 </script>

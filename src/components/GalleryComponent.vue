@@ -42,7 +42,7 @@ onMounted(() => {
   <section class="bg-yellow-100 text-black dark:bg-gray-950 dark:text-white py-20 px-6 sm:px-10">
     <div class="text-center mb-14">
       <h2 class="text-4xl font-extrabold text-black dark:text-yellow-400 mb-4">
-        Gallery
+        Photo Gallery
       </h2>
       <p class="text-gray-700 dark:text-gray-300 max-w-2xl mx-auto text-lg">
         Real moments from training, practice sessions and amazing students!

@@ -67,7 +67,6 @@ const services = ref([
     >
       <source src="/video/car_animation.mp4" type="video/mp4" />
     </video>
-
     <div
       v-motion
       class="relative z-10 flex flex-col items-center justify-center sm:h-full h-72 text-center px-4"

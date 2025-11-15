@@ -10,6 +10,7 @@ import PageGallery from "@/pages/PageGallery.vue";
 import PageContact from "@/pages/PageContact.vue";
 import PagePackages from "@/pages/PageEnroll.vue";
 import PageNotFound from "@/pages/PageNotFound.vue";
+import PageVideo from "@/pages/PageVideo.vue";
 
 const routes = [
   {
@@ -48,11 +49,16 @@ const routes = [
   //   component: PagePricing,
   // },
   {
-    path: "/gallery",
+    path: "/photo-gallery",
     name: "PageGallery",
     component: PageGallery,
   },
   {
+    path: "/video-gallery",
+    name: "PageVideo",
+    component: PageVideo,
+  },
+    {
     path: "/contact",
     name: "PageContact",
     component: PageContact,
